@@ -1,0 +1,88 @@
+/* pages/登录/登录.wxss */
+
+/* pages/login/login.wxss */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 200rpx;
+}
+
+
+.logo-image {
+  width: 300rpx;
+  height: 300rpx;
+  margin-bottom: 30rpx;
+}
+
+.input-section {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+.placeholder-text {
+  color: #999;
+}
+
+.login-button {
+  width: 80%;
+  margin-top: 20rpx;
+}
+
+.register-button {
+  width: 80%;
+  margin-top: 20rpx;
+  background-color: transparent;
+  color: #333;
+  border: 1px solid #ddd;
+}
+/* pages/login/login.wxss */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 200rpx;
+}
+
+.logo-image {
+  width: 300rpx;
+  height: 300rpx;
+  margin-bottom: 30rpx;
+}
+
+.input-section {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+.placeholder-text {
+  color: #999;
+}
+
+.login-button {
+  width: 80%;
+  margin-top: 20rpx;
+}
+
+.register-button {
+  width: 80%;
+  margin-top: 20rpx;
+  background-color: transparent;
+  color: #333;
+  border: 1px solid #ddd;
+}
+
+/* 底部欢迎信息样式 */
+.footer-welcome {
+  position: fixed; /* 使用fixed定位，让元素固定在屏幕上 */
+  bottom: 0;      /* 贴紧底部 */
+  left: 0;
+  right: 0;       /* 横向占满全屏 */
+  background-color: #fff; /* 避免底层内容透出 */
+  padding: 20rpx 0;        /* 上下各留20rpx空白 */
+  text-align: center;     /* 文字居中显示 */
+  font-size: 28rpx;       /* 设置字体大小 */
+  color: #666;            /* 设置字体颜色 */
+}

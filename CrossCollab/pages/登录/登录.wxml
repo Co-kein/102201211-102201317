@@ -1,0 +1,24 @@
+<!-- pages/login/login.wxml -->
+<view class="container">
+  <image src="/image/login-logo.png" mode="scaleToFill" class="logo-image"></image>
+  
+  <view class="input-section">
+    <input placeholder-class="placeholder-text" placeholder="请输入账号" bindinput="handleUsernameChange"/>
+    <input type="password" placeholder-class="placeholder-text" placeholder="请输入密码" bindinput="handlePasswordChange"/>
+  </view>
+  
+  <button type="primary" bindtap="onLoginClick" class="login-button">登录</button>
+  <button type="default" bindtap="onRegisterClick" class="register-button">注册</button>
+</view>
+
+<!-- pages/login/login.wxml -->
+<view class="container">
+  <image src="../../images/login-logo.png" mode="scaleToFill" class="logo-image"></image>
+  
+
+  
+  <!-- 添加底部欢迎信息 -->
+  <view class="footer-welcome">
+    欢迎使用CrossCollab
+  </view>
+</view>
