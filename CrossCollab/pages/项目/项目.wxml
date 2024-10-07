@@ -1,0 +1,24 @@
+<view class="container">
+  <!-- 搜索栏 -->
+  <view class="search-container">
+    <input class="search-input" placeholder="搜索项目..." bindinput="onSearchInput" />
+  </view>
+
+  <!-- 项目列表 -->
+  <view class="project-list">
+    <block wx:for="{{projects}}" wx:key="index">
+      <view class="project-item" bindtap="onItemTap" data-id="{{item.title}}">
+        <image class="project-image" src="{{item.image}}" mode="aspectFill"></image>
+        <view class="project-info">
+          <text class="project-title">{{item.title}}</text>
+          <text class="project-details">{{item.details}}</text>
+        </view>
+      </view>
+    </block>
+  </view>
+
+  <!-- 添加按钮 -->
+  <view class="add-button" bindtap="onAddProject">
+    <text>+</text>
+  </view>
+</view>

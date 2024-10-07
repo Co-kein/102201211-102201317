@@ -1,0 +1,86 @@
+.container {
+  padding: 20px;
+  background-color: #f8f8f8; /* 背景颜色 */
+}
+
+.search-container {
+  margin-bottom: 10px; /* 搜索栏与导航之间的间距 */
+}
+
+.search-input {
+  width: 100%; /* 使输入框占满宽度 */
+  padding: 10px; /* 输入框内边距 */
+  border: 1px solid #ccc; /* 输入框边框 */
+  border-radius: 5px; /* 输入框圆角 */
+  font-size: 16px; /* 字体大小 */
+}
+
+.navbar {
+  margin-bottom: 20px; /* 导航与项目列表之间的间距 */
+}
+
+.tab {
+  display: flex;
+  justify-content: space-between; /* 导航标签之间的间距 */
+}
+
+.tab-item {
+  padding: 10px 15px; /* 标签内边距 */
+  cursor: pointer; /* 鼠标悬停效果 */
+}
+
+.tab-item.active {
+  font-weight: bold; /* 高亮活动标签 */
+  color: #00b26a; /* 活动标签颜色 */
+  border-bottom: 2px solid #00b26a; /* 为活动标签添加下划线 */
+}
+
+.project-list {
+  margin-top: 10px; /* 项目列表上方的间距 */
+}
+
+.project-item {
+  display: flex;
+  margin-bottom: 15px; /* 项目项之间的间距 */
+  padding: 10px; /* 项目项内边距 */
+  background-color: #fff; /* 项目项背景 */
+  border-radius: 5px; /* 项目项圆角 */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* 阴影效果 */
+}
+
+.project-image {
+  width: 80px; /* 项目图片宽度 */
+  height: 80px; /* 项目图片高度 */
+  border-radius: 5px; /* 图片圆角 */
+}
+
+.project-info {
+  margin-left: 10px; /* 项目信息与图片之间的间距 */
+  flex: 1; /* 使项目信息占满剩余空间 */
+}
+
+.project-title {
+  font-size: 18px; /* 项目标题字体大小 */
+  font-weight: bold; /* 项目标题加粗 */
+}
+
+.project-details {
+  color: #666; /* 项目详情文字颜色 */
+  font-size: 14px; /* 项目详情字体大小 */
+}
+
+.add-button {
+  position: fixed;
+  bottom: 20px; /* 固定按钮距离底部的距离 */
+  right: 20px; /* 固定按钮距离右侧的距离 */
+  width: 50px; /* 按钮宽度 */
+  height: 50px; /* 按钮高度 */
+  background-color: #00b26a; /* 按钮背景色 */
+  border-radius: 25px; /* 按钮圆角 */
+  display: flex;
+  align-items: center; /* 垂直居中 */
+  justify-content: center; /* 水平居中 */
+  color: white; /* 按钮文字颜色 */
+  font-size: 30px; /* 按钮文字大小 */
+  text-align: center; /* 按钮文字对齐方式 */
+}

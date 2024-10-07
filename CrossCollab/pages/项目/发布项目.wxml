@@ -1,0 +1,50 @@
+<view class="container">
+  <text class="title">项目发起</text>
+
+  <view class="form-item">
+    <text>项目名称</text>
+    <input class="form-input" placeholder="输入项目名称" />
+  </view>
+
+  <view class="form-item">
+    <text>项目类型</text>
+    <picker mode="selector" range="{{projectTypes}}" bindchange="onTypeChange">
+      <view class="picker">
+        {{selectedType}}
+      </view>
+    </picker>
+  </view>
+
+  <view class="form-item">
+    <text>年级限制</text>
+    <input class="form-input" placeholder="输入年级限制" />
+  </view>
+
+  <view class="form-item">
+    <text>所需技能</text>
+    <view class="skills-container">
+      <view class="skill" wx:for="{{skills}}" wx:key="index">{{item}}<text class="remove-skill" bindtap="removeSkill" data-skill="{{item}}">×</text></view>
+      <input class="form-input" placeholder="添加技能" bindinput="onAddSkill" />
+      <button class="add-skill" bindtap="addSkill">+</button>
+    </view>
+  </view>
+
+  <view class="form-item">
+    <text>所需人才</text>
+    <view class="talents-container">
+      <view class="talent" wx:for="{{talents}}" wx:key="index">{{item}}<text class="remove-talent" bindtap="removeTalent" data-talent="{{item}}">×</text></view>
+      <input class="form-input" placeholder="添加人才" bindinput="onAddTalent" />
+      <button class="add-talent" bindtap="addTalent">+</button>
+    </view>
+  </view>
+
+  <view class="form-item">
+    <text>项目描述</text>
+    <textarea class="form-textarea" placeholder="输入项目描述"></textarea>
+  </view>
+
+  <view class="button-container">
+    <button class="cancel-button" bindtap="onCancel">取消</button>
+    <button class="create-button" bindtap="onCreate">创建</button>
+  </view>
+</view>
