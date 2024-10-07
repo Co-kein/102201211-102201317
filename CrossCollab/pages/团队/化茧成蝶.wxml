@@ -1,0 +1,19 @@
+<view class="container">
+  <!-- Progress Section -->
+  <view class="progress-section">
+    <view class="progress-header">
+      <text class="title">项目进度  50%</text>
+    </view>
+  </view>
+
+  <!-- Team Members Section -->
+  <view class="team-section">
+    <text class="section-title">团队成员</text>
+    <view class="team-member" wx:for="{{teamMembers}}" wx:key="index">
+      <image class="avatar" src="{{item.avatar}}" />
+      <view class="member-info">
+        <text class="member-name">{{item.name}}</text>
+      </view>
+    </view>
+  </view>
+</view>

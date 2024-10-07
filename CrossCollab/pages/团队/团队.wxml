@@ -1,0 +1,19 @@
+<view class="container">
+  <view class="header">
+    <text class="title">CrossCollab</text>
+    <input class="search-input" placeholder="搜索团队..." bindinput="onSearchInput" />
+  </view>
+
+  <view class="team-list">
+    <block wx:for="{{teams}}" wx:key="index">
+      <view class="team-item" bindtap="onTeamTap" data-name="{{item.name}}">
+        <image class="team-image" src="{{item.image}}" mode="aspectFill"></image>
+        <view class="team-info">
+          <text class="team-name">{{item.name}}</text>
+          <text class="team-details">{{item.details}}</text>
+        </view>
+        <button class="join-button" bindtap="onJoinTeam" data-id="{{item.id}}">加入</button>
+      </view>
+    </block>
+  </view>
+</view>

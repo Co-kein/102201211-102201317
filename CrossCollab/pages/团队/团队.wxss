@@ -1,0 +1,68 @@
+.container {
+  padding: 20px;
+  background-color: #f8f8f8; /* 背景颜色 */
+  height: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.search-input {
+  width: 60%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.team-list {
+  margin-top: 10px; /* 项目列表上方的间距 */
+}
+
+.team-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 10px; /* 项目项之间的间距 */
+  background-color: #fff; /* 项目项背景 */
+  border-radius: 5px; /* 项目项圆角 */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* 阴影效果 */
+}
+
+.team-image {
+  width: 60px; /* 团队图片宽度 */
+  height: 60px; /* 团队图片高度 */
+  border-radius: 5px; /* 图片圆角 */
+}
+
+.team-info {
+  flex: 1; /* 使项目信息占满剩余空间 */
+  margin-left: 10px; /* 项目信息与图片之间的间距 */
+}
+
+.team-name {
+  font-size: 18px; /* 项目标题字体大小 */
+  font-weight: bold; /* 项目标题加粗 */
+}
+
+.team-details {
+  color: #666; /* 项目详情文字颜色 */
+  font-size: 14px; /* 项目详情字体大小 */
+}
+
+.join-button {
+  padding: 5px 10px;
+  background-color: #00b26a; /* 加入按钮颜色 */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
