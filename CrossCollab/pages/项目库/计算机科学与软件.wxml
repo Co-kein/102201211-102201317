@@ -1,0 +1,14 @@
+<view class="container">
+  <view class="header">
+    <image src="{{profileImage}}" class="profile-image" />
+    <view class="header-info">
+      <text class="author">{{author}}</text>
+      <text class="date">{{date}}</text>
+    </view>
+    
+  </view>
+  <image src="/image/计算机科学与软件.png" class="jsj" />
+  <text class="title">{{title}}</text>
+  <text class="content">{{content}}</text>
+  
+</view>

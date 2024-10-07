@@ -1,0 +1,62 @@
+/* 容器 */
+.container {
+  padding: 30rpx; /* 内边距 */
+  background-color: #ffffff; /* 背景色 */
+  height: calc(100vh - 40rpx); /* 减少高度以留出空间给可能存在的导航栏或其它固定头部 */
+  box-shadow: 0 4rpx 10rpx rgba(0, 0, 0, 0.1); /* 增加阴影效果 */
+  border-radius: 10rpx; /* 圆角效果 */
+  overflow-y: auto; /* 超出内容启用滚动条 */
+}
+
+/* 头部 */
+.header {
+  display: flex; /* 使用 flexbox */
+  align-items: center; /* 垂直居中对齐 */
+  margin-bottom: 25rpx; /* 底部间距 */
+}
+
+/* 作者头像 */
+.profile-image {
+  width: 60rpx; /* 增大头像 */
+  height: 60rpx;
+  border-radius: 50%; /* 圆形头像 */
+  object-fit: cover; /* 保证图像填充圆圈 */
+  border: 2rpx solid #e0e0e0; /* 添加边框 */
+}
+
+/* 头部信息区 */
+.header-info {
+  flex-grow: 1; /* 自适应宽度 */
+  margin-left: 15rpx; /* 左侧间距 */
+}
+
+/* 作者名 */
+.author {
+  font-size: 25rpx; /* 增大字号 */
+  font-weight: bold; /* 加粗 */
+  color: #333333; /* 深色字体 */
+}
+
+/* 发布日期 */
+.date {
+  font-size: 20rpx; /* 日期字号 */
+  color: #888888; /* 灰色 */
+}
+
+/* 主标题 */
+.title {
+  font-size: 35rpx; /* 增大标题字号 */
+  font-weight: bold; /* 加粗 */
+  margin: 20rpx 0; /* 上下间距 */
+  color: #000000; /* 深色 */
+}
+
+/* 正文文本 */
+.content {
+  font-size: 30rpx; /* 正文字体大小 */
+  color: #333333; /* 深色字体 */
+  line-height: 1.6; /* 增加行高 */
+  margin-bottom: 30rpx; /* 底部间距 */
+}
+
+
