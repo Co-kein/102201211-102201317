@@ -1,0 +1,36 @@
+/* pages/login/login.wxss */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+    
+.welcome-image {
+  width: 100%; /* 或者根据需要设置具体宽度 */
+  aspect-ratio: 16 / 9; /* 根据实际图片比例调整 */
+}
+
+
+.title {
+  font-size: 48rpx;
+  color: #3b4147;
+  margin-top: 20rpx;
+}
+
+.avatar {
+  margin-top: 30rpx;
+}
+
+input, button {
+  width: 100%;
+  margin: 10rpx 0;
+}
+
+.next-step {
+  background-color: #1aad19;
+  color: white;
+  font-weight: bold;
+  margin-top: 50rpx;
+  width: 80%;
+}

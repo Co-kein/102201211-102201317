@@ -1,0 +1,25 @@
+<!-- pages/login/login.wxml -->
+<view class="container">
+    <!-- 新增欢迎图片 -->
+    <image class="welcome-image" src="/image/login-logo.png" mode="aspectFill"></image>
+
+    <!-- 原始欢迎信息部分 -->
+    
+    
+    <view class="title">欢迎使用CrossCollab!</view>
+    
+    <view class="input-group">
+        <text>请输入手机号码:</text>
+        <input type="number" bindinput="onPhoneInput" placeholder="请输入手机号码"/>
+        <button bindtap="sendVerificationCode">发送验证码</button>
+    </view>
+    
+    <view class="input-group">
+        <text>请输入验证码:</text>
+        <input type="number" bindinput="onCodeInput" placeholder="请输入验证码"/>
+        <button bindtap="verifyCode">验证</button>
+    </view>
+    
+    <!-- 跳转按钮 -->
+    <button class="next-step" bindtap="handleNextStep">下一步</button>
+</view>
