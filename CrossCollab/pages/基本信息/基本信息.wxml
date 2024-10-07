@@ -1,0 +1,32 @@
+<!--pages/基本信息/基本信息.wxml-->
+<view class="container">
+  <image src="/image/login-logo.png" mode="scaleToFill" class="logo-image"></image>
+  
+  <view class="title">CrossCollab</view>
+  
+  <view class="input-section">
+    <text>请输入学校名称:</text>
+    <input placeholder-class="placeholder-text" placeholder="学校名称" bindinput="handleSchoolChange"/>
+  </view>
+  
+  <view class="input-section">
+    <text>请输入你的学号/工号:</text>
+    <input placeholder-class="placeholder-text" placeholder="学号/工号" bindinput="handleIdChange"/>
+  </view>
+  
+  <view class="input-section">
+    <text>请输入你的姓名:</text>
+    <input placeholder-class="placeholder-text" placeholder="姓名" bindinput="handleNameChange"/>
+  </view>
+  
+  <view class="input-section">
+    <text>请选择你的身份:</text>
+    <picker mode="selector" bindchange="handleIdentityChange">
+      <view class="picker">
+        {{identity ? identity : '请选择'}}
+      </view>
+    </picker>
+  </view>
+  
+  <button bindtap="goToLogin" class="back-button">返回登录界面</button>
+</view>
