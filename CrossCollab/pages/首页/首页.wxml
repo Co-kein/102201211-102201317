@@ -1,0 +1,21 @@
+<view class="container">
+  <view class="header">
+    <text class="title">CrossCollab</text>
+    <input class="search-input" placeholder="请输入内容..." bindinput="onSearchInput" />
+  </view>
+
+  <view class="recommendation">
+    <text class="recommendation-title">推荐项目</text>
+    <view class="item-list">
+      <block wx:for="{{recommendations}}" wx:key="index">
+        <view class="item" bindtap="onItemTap" data-id="{{item.title}}">
+          <image class="item-image" src="{{item.image}}" mode="aspectFill"></image>
+          <view class="item-info">
+            <text class="item-title">{{item.title}}</text>
+            <text class="item-count">{{item.count}}</text>
+          </view>
+        </view>
+      </block>
+    </view>
+  </view>
+</view>
