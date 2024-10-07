@@ -1,0 +1,53 @@
+<view class="container">
+  <!-- 用户信息 -->
+  <view class="user-info" bindtap="onGoToPersonalInfo">
+    <image class="user-avatar" src="/image/user.jpg" mode="aspectFill"></image>
+    <text class="user-name">不想上学</text>
+    <text class="user-major">大三 | 计算机类</text>
+  </view>
+
+  <!-- 功能按钮 -->
+  <view class="function-buttons">
+    <view class="function-button" bindtap="onGoToForum">
+      <image class="icon" src="/image/论坛.jpg" mode="aspectFill" />
+      <text>论坛</text>
+    </view>
+    <view class="function-button" bindtap="onGoToCollect">
+      <image class="icon" src="/image/收藏.png" mode="aspectFill" />
+      <text>我的收藏</text>
+    </view>
+    <view class="function-button" bindtap="onGoToBrowserHistory">
+      <image class="icon" src="/image/浏览记录.jpg" mode="aspectFill" />
+      <text>最近浏览</text>
+    </view>
+  </view>
+
+  <!-- 常用功能 -->
+  <view class="common-functions">
+    <view class="function-item" bindtap="onGoToPersonalInfo">
+      <image class="arrow" src="/image/个人信息.png" />
+      <text>个人信息</text>
+    </view>
+    <view class="function-item" bindtap="onGoToDynamics">
+      
+      <image class="arrow" src="/image/动态.png" />
+      <text>我的动态</text>
+    </view>
+    <view class="function-item" bindtap="onGoToProjects">
+      
+      <image class="arrow" src="/image/团队.jpg" />
+      <text>我的团队</text>
+    </view>
+    <view class="function-item" bindtap="onGoToSettings">
+      
+      <image class="arrow" src="/image/隐私.jpg" />
+      <text>隐私设置</text>
+    </view>
+    <view class="function-item" bindtap="onGoToAgreement">
+      
+      <image class="arrow" src="/image/协议.png" />
+      <text>用户协议</text>
+    </view>
+
+  </view>
+</view>

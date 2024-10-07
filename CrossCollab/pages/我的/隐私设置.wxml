@@ -1,0 +1,59 @@
+<view class="container">
+  <view class="header">
+    <text class="title">隐私设置</text>
+  </view>
+
+  <view class="section">
+    <view class="section-item">
+      <text class="section-title">个人名片</text>
+      <switch class="switch-control" checked="{{true}}"></switch>
+      <text class="description">开启后，所有人都可查看你的个人信息。</text>
+    </view>
+
+    <view class="section-title">可见信息设置</view>
+    <view class="section-item">
+      <text class="info-label">手机号</text>
+      <switch class="switch-control"></switch>
+    </view>
+    <view class="section-item">
+      <text class="info-label">邮箱</text>
+      <switch class="switch-control"></switch>
+    </view>
+    <view class="section-item">
+      <text class="info-label">专业</text>
+      <switch class="switch-control"></switch>
+    </view>
+    <view class="section-item">
+      <text class="info-label">班级</text>
+      <switch class="switch-control"></switch>
+    </view>
+    <view class="section-item">
+      <text class="info-label">项目经历</text>
+      <switch class="switch-control"></switch>
+    </view>
+
+    <view class="section">
+      <text class="section-title">可见范围</text>
+      <radio-group class="radio-group">
+        <label class="radio-label">
+          <radio value="本车级" checked="true"></radio> 本车级
+        </label>
+        <label class="radio-label">
+          <radio value="本院系"></radio> 本院系
+        </label>
+        <label class="radio-label">
+          <radio value="本班级"></radio> 本班级
+        </label>
+        <label class="radio-label">
+          <radio value="不限"></radio> 不限
+        </label>
+      </radio-group>
+    </view>
+
+    <view class="section-item">
+      <text class="info-label">新消息通知</text>
+      <switch class="switch-control" checked="{{true}}"></switch>
+      <text class="description">关闭后，将不再接收新的消息通知。</text>
+    </view>
+  </view>
+</view>

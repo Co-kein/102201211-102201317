@@ -1,0 +1,67 @@
+/* 容器样式 */
+.container {
+  padding: 20px;
+  background-color: #fff;
+}
+
+/* 返回按钮样式 */
+.back-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.back-icon {
+  width: 25px;
+  height: 25px;
+}
+
+/* 已加入团队按钮样式 */
+.joined-team {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.joined-button {
+  padding: 10px 20px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  background-color: white;
+  font-size: 16px;
+}
+
+/* 团队列表样式 */
+.team-list {
+  margin-top: 20px;
+}
+
+.team-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.team-name {
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.team-image {
+  width: 100px;
+  height: 80px;
+  border-radius: 5px;
+}
+
+/* 加入团队按钮样式 */
+.join-team {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.join-button {
+  padding: 10px 20px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  background-color: white;
+  font-size: 16px;
+}

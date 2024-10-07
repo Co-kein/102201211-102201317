@@ -1,0 +1,31 @@
+<view class="container">
+
+
+  <!-- 已加入的团队按钮 -->
+  <view class="joined-team">
+    <button class="joined-button">已加入的团队</button>
+  </view>
+
+  <!-- 团队列表 -->
+  <view class="team-list">
+    <view class="team-item">
+      <text class="team-name">益行人热</text>
+      <image class="team-image" src="/image/团队1.jpg" mode="aspectFill"></image>
+    </view>
+
+    <view class="team-item">
+      <text class="team-name">猫和老鼠</text>
+      <image class="team-image" src="/image/团队6.jpg" mode="aspectFill"></image>
+    </view>
+
+    <view class="team-item">
+      <text class="team-name">海底中队</text>
+      <image class="team-image" src="/image/团队3.png" mode="aspectFill"></image>
+    </view>
+  </view>
+
+  <!-- 加入团队按钮 -->
+  <view class="join-team">
+    <button class="join-button"  bindtap="TojoinTeam">加入团队</button>
+  </view>
+</view>
